@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bienvenidxs a MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <div class="logo"> 
+                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                </div>
+                <div class="form" action="#" method="GET">
+                    <div class="input">Buscar productos, marcas y más</div>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+        </header>
+        
+        <main>
+            <section>
+                <form action="menu" method="post" class="form-register">
+                    <div class="datos-register">
+                        <legend>Datos usuario</legend>
+                        <input type="text" name="name" placeholder="Nombre y Apellido">
+                        <input type="text" name="user" placeholder="User">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="datos-register">
+                        <legend>Fecha de nacimiento</legend>
+                        <input type="date" name="cumple" placeholder="DD/MM/AA">
+                        <input type="text" name="domicilio" placeholder="Domicilio">
+                    </div>
+                    <div class="datos-register">
+                        <legend>Perfil de usuario</legend>
+                        <label for="tipoC">Comprador <input type="radio" name="tipoC"></label>
+                        <label for="tipoV">Vendedor <input type="radio" name="tipoV"></label>
+                    </div>
+                    <div class="datos-register">
+                        <legend>Intereses</legend>
+                        <label for="interesElectro">
+                            <input type="checkbox" id="interesElectro" name="intereses" value="electro"> Electro
+                        </label><br>
+                
+                        <label for="interesModa">
+                            <input type="checkbox" id="interesModa" name="intereses" value="moda"> Moda
+                        </label><br>
+                
+                        <label for="interesHogar">
+                            <input type="checkbox" id="interesHogar" name="intereses" value="hogar"> Hogar
+                        </label><br>
+                
+                        <label for="interesJugueteria">
+                            <input type="checkbox" id="interesJugueteria" name="intereses" value="jugueteria"> Juguetería
+                        </label><br>
+                
+                        <label for="interesVidaSana">
+                            <input type="checkbox" id="interesVidaSana" name="intereses" value="vida-sana"> Vida Sana
+                        </label><br>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            
+        </footer>
+        
+    </body>
+</html>

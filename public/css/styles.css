@@ -1,3 +1,20 @@
+/*
+=== Paleta de colores ===
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+
+=== Tamaños Tipográficos ===
+    Cuerpos de texto: 12px
+    Titulares (Basado en tu última visita/Ofertas): 24px
+    Precios: 18px
+    Descuentos: 16px
+    Descripciones: 16px
+*/
+
 /*=== Selector universal===*/
 *{
     margin: 0px;
@@ -10,7 +27,7 @@ body{
     background-color: #ebebeb;
 }
 
-h3{
+.headline{
     font-size: 24px;
 }
 
@@ -60,7 +77,8 @@ header div.logo, header .form{
 header .form{
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: center;
+    align-items: stretch;
 }
 
 /* header div.logo{
@@ -86,9 +104,11 @@ header ul li a{
 header .form .input{
     background-color: #FFF;
     border: 1px solid #000;
+    border-right: #fff;
     outline: none;
     color: #666;
     padding: 2px;
+    width: 65%;
 }
 
 header .form .submit{
@@ -127,6 +147,7 @@ div.burger-menu i{
 }
 
 .discount{
+    text-align: end;
     width: 60%;
 }
 
@@ -189,6 +210,45 @@ main section h3{
 /*=== APlicar CSS al article div.main-article ===*/
 
 
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+}
+
+.foot-card i{
+    font-size: 16px;
+    padding: 5px;
+}
+
+.foot-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+/* REGISTER */
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:30px;
+    
+}
+
+.datos-register{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 @media (min-width: 361px){
     /*=== Hacer visible main section article .descripcion===*/
     .description{
@@ -221,6 +281,18 @@ main section h3{
     main section article{
         width: 44%;
         box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .foot-card{
+        width: 30%;
     }
 
 }
