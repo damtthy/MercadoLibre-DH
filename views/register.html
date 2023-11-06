@@ -39,26 +39,29 @@
         </header>
         
         <main>
-            <section>
+            <section style="
+                display: flex;
+                justify-content: center;
+            ">
                 <form action="menu" method="post" class="form-register">
                     <div class="datos-register">
-                        <legend>Datos usuario</legend>
+                        <legend><b>Datos usuario</b></legend><br>
                         <input type="text" name="name" placeholder="Nombre y Apellido">
                         <input type="text" name="user" placeholder="User">
                         <input type="email" name="email" placeholder="Email">
                     </div>
                     <div class="datos-register">
-                        <legend>Fecha de nacimiento</legend>
+                        <legend><b>Fecha de nacimiento</b></legend><br>
                         <input type="date" name="cumple" placeholder="DD/MM/AA">
                         <input type="text" name="domicilio" placeholder="Domicilio">
                     </div>
                     <div class="datos-register">
-                        <legend>Perfil de usuario</legend>
+                        <legend><b>Perfil de usuario</b></legend><br>
                         <label for="tipoC">Comprador <input type="radio" name="tipoC"></label>
                         <label for="tipoV">Vendedor <input type="radio" name="tipoV"></label>
                     </div>
                     <div class="datos-register">
-                        <legend>Intereses</legend>
+                        <legend><b>Intereses</b></legend><br>
                         <label for="interesElectro">
                             <input type="checkbox" id="interesElectro" name="intereses" value="electro"> Electro
                         </label><br>
@@ -77,7 +80,7 @@
                 
                         <label for="interesVidaSana">
                             <input type="checkbox" id="interesVidaSana" name="intereses" value="vida-sana"> Vida Sana
-                        </label><br>
+                        </label>
                     </div>
                 </form>
             </section>

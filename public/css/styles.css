@@ -65,6 +65,7 @@ header div.top-header p{
     flex-wrap: wrap;
     padding: 20px;
     align-items: center;
+    justify-content: space-evenly;
 }
 /*=== Aquí se debe disponer el CSS para el div.top-header=== */
 
@@ -74,11 +75,31 @@ header div.logo, header .form{
     width: 50%;
 }
 
+.logo{
+    padding: 10px;
+}
+
 header .form{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
+    background-color: #FFF;
+    border-radius: 1em;
+}
+
+.barra-busqueda{
+    margin: 0px;
+    border: hidden;
+    height: 30px;
+    padding: 5px;
+    width: 90%;
+    background-color: transparent;
+}
+
+.btn-busqueda{
+    border: none;
+    background-color: transparent;
 }
 
 /* header div.logo{
@@ -90,6 +111,10 @@ header .form{
 header nav{
     font-size: 12px;
     margin-left: 20px;
+}
+
+nav.nav-header{
+    display: none;
 }
 
 header ul li{
@@ -138,7 +163,7 @@ div.burger-menu i{
 .products{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .price{
@@ -233,23 +258,71 @@ footer{
     justify-content: space-between;
 }
 
+.foot-card p{
+    font-size: 12px;
+    color: #666;
+}
+
 /* REGISTER */
 
-.form-register{
+.form-register, .form-login{
+    width: 50vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding:30px;
-    
+    border: 1px solid black;
+    margin-top: 40px;
+    border-radius: 1em;
 }
 
 .datos-register{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+
+
+.form-login{
+    align-items: center;
+}
+
+
+.btn-ingresar{
+    width: 5em;
+}
+
+.foot-icon{
+    font-size: 3em;
+}
+
+
+
 @media (min-width: 361px){
+
+    header div.logo, header .form, header div.top-header p{
+        width: 30%;
+    }
+
+    nav.nav-header, nav.nav-header ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    nav.nav-header li{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
     /*=== Hacer visible main section article .descripcion===*/
     .description{
         display: block;
@@ -265,6 +338,10 @@ footer{
     
 
     /*=== Aplicar CSS al main section div.products===*/
+
+    .products{
+        justify-content: space-between;
+    }
     
     /*=== Aplicar CSS al main section div.products article===*/
     

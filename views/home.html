@@ -15,12 +15,12 @@
                     <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
                 </div>
                 <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más</div>
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input class="barra-busqueda" type="search" placeholder="Buscar productos, marcas y más">
+                    <button class="btn-busqueda" type="submit"><i class="fa fa-search"></i></button>
                 </div>
                 <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-            <nav>
+            <nav class="nav-header">
                 <ul>
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
@@ -126,7 +126,12 @@
         </main>
         <footer>
             <div class="foot-card">
-                <i class="fa-solid fa-credit-card"></i>
+                <div class="foot-icon">
+                    <i class="fas fa-credit-card" style="
+                    color: #1259c3;
+                    font-size: larger;"></i>
+                </div>
+                
                 <p>
                     <b>Pagá con tarjeta o en efectivo</b>
                 </p>
@@ -136,6 +141,11 @@
                 </p>
             </div>
             <div class="foot-card">
+                <div class="foot-icon">
+                    <i class="fas fa-gift" style="
+                        color: #1259c3;
+                        font-size: larger;"></i>
+                </div>
                 <p>
                     <b>Envío gratis desde $ 2.500</b>
                 </p>
@@ -145,6 +155,11 @@
                 </p>
             </div>
             <div class="foot-card">
+                <div class="foot-icon">
+                    <i class="fas fa-user-shield" style="
+                        color: #1259c3;
+                        font-size: larger;"></i>
+                </div>
                 <p>
                     <b>Seguridad, de principio a fin</b>
                 </p>
